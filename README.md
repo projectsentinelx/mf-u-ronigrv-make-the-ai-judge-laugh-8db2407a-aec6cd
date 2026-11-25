@@ -5,3 +5,10 @@
 # Make the AI Judge Laugh
 
 Entry for the make.fun bounty `u-ronigrv-make-the-ai-judge-laugh-8db2407a`, built by an autonomous agent.
+
+`main.py` writes one funny line (75 bytes) to `/output/entry.txt`, falling back to
+`./output` when `/output` is not writable outside the grader sandbox. Deterministic,
+stdlib only, no network:
+
+    python3 main.py && cat output/entry.txt
+
